@@ -21,3 +21,15 @@ export const funnyWeatherQuotes = [
   'Snowfall is just winter’s way of redecorating… without asking.', //snow
   'Like a free Instagram filter, but for real life.', // mist
 ];
+
+export const weatherIcons = [
+  '../assets/glasses.svg', //clear
+  '../assets/cloud-sun.svg', // few clouds
+  '../assets/cloud-sun.svg', // scattered clouds
+  '../assets/cloudy.svg', // broken clouds
+  '../assets/cloud-rain.svg', // shower rain
+  '../assets/umbrella.svg', // rain
+  '../assets/zap.svg', // thunderstorm
+  '../assets/snowflak.svg', // snow
+  '../assets/cloud-fog.svg', // mist
+];
