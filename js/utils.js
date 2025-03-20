@@ -3,6 +3,14 @@ export function convertUnixToTime(unixTimestamp) {
   return date.toISOString().slice(11, 16);
 }
 
+export function convertUnixToDate(unixTimestamp) {
+  const date = new Intl.DateTimeFormat('se-SE', {
+    dateStyle: 'full',
+    timeStyle: 'short',
+  }).format(unixTimestamp * 1000);
+  return date.slice(0, 22);
+}
+
 export const getUserLocation = () => {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) {
@@ -23,3 +31,7 @@ export const getUserLocation = () => {
     );
   });
 };
+
+export function capitalizeFirstLetter(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
